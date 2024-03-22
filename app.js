@@ -56,11 +56,11 @@ function translateDroite(x) {
 
 fetch("./contenu.json")
 .then(data=>{
-  console.log(data)
   return data.json()
 })
 .then(donnees=>{
     console.log(donnees.projets)
+    contenu(donnees.projets)
 })
 
 
@@ -74,9 +74,9 @@ fetch("./contenu.json")
 <div class="swiper-slide slide2">
     <div class="swiper-content flex space-between">
         <div class="divPhoto divPhotoGauche">
-            <img id="photo1" class="photosGauches initGauche" src="https://picsum.photos/id/237/200/300" alt="">
-            <img id="photo2" class="photosGauches initGauche" src="https://picsum.photos/id/238/200/300" alt="">
-            <img id="photo3" class="photosGauches initGauche" src="https://picsum.photos/id/239/200/300" alt="">
+            <img id="photo1" class="photosGauches initGauche" src="${donnee.photo1}" alt="">
+            <img id="photo2" class="photosGauches initGauche" src="${donnee.photo2}" alt="">
+            <img id="photo3" class="photosGauches initGauche" src="${donnee.photo3}" alt="">
         </div>
         <div class="textContent">
             <img src="https://picsum.photos/id/240/200/300" alt="">
@@ -92,9 +92,9 @@ fetch("./contenu.json")
             <img src="https://picsum.photos/id/240/200/300" alt="">
         </div>
         <div class="divPhoto divPhotoDroite">
-            <img id="photo4" class="photosDroites initDroite" src="https://picsum.photos/id/237/200/300" alt="">
-            <img id="photo5" class="photosDroites initDroite" src="https://picsum.photos/id/238/200/300" alt="">
-            <img id="photo6" class="photosDroites initDroite" src="https://picsum.photos/id/239/200/300" alt="">
+            <img id="photo1" class="photosGauches initGauche" src="${donnee.photo1}" alt="">
+            <img id="photo2" class="photosGauches initGauche" src="${donnee.photo2}" alt="">
+            <img id="photo3" class="photosGauches initGauche" src="${donnee.photo3}" alt="">
         </div>
     </div>
 </div>
@@ -102,3 +102,19 @@ fetch("./contenu.json")
 
 //j'appel mon slider
 let slider = document.getElementById("slider")
+
+/**
+ * la fonction ajoute le contenu à mon slider
+ * @param {chaine de caractère} X
+ */
+function contenu(X){
+  // pour chaque objet du json
+  X.forEach(donnee=>{
+    console.log(donnee)
+    // si la position dans le tableau est paire
+    
+
+    // je rajoute un slide gauche à slider
+    // sinon je rajoute un slide droite à slider
+  })
+}
