@@ -1,29 +1,42 @@
 {
+    "profil":[
+        {
+            "photo":"",
+            "nom":"DUMONT",
+            "prenom":"Florent",
+            "telephone":"06 61 30 04 14",
+            "mail": "imura.kenshin@live.fr",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?",
+            "services":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?",
+            "competences":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?"
+            
+        }
+    ],
     "projets":[
-    {
-        "photo1": "https://picsum.photos/id/237/200/300",
-        "photo2": "https://picsum.photos/id/238/200/300",
-        "photo3": "https://picsum.photos/id/239/200/300"
-    },
-    {
-        "photo1": "https://picsum.photos/id/237/200/300",
-        "photo2": "https://picsum.photos/id/238/200/300",
-        "photo3": "https://picsum.photos/id/239/200/300"
-    },
-    {
-        "photo1": "https://picsum.photos/id/237/200/300",
-        "photo2": "https://picsum.photos/id/238/200/300",
-        "photo3": "https://picsum.photos/id/239/200/300"
-    },
-    {
-        "photo1": "https://picsum.photos/id/237/200/300",
-        "photo2": "https://picsum.photos/id/238/200/300",
-        "photo3": "https://picsum.photos/id/239/200/300"
-    },
-    {
-        "photo1": "https://picsum.photos/id/237/200/300",
-        "photo2": "https://picsum.photos/id/238/200/300",
-        "photo3": "https://picsum.photos/id/239/200/300"
-    }
+        {
+            "photo1": "https://picsum.photos/id/237/200/300",
+            "photo2": "https://picsum.photos/id/238/200/300",
+            "photo3": "https://picsum.photos/id/239/200/300"
+        },
+        {
+            "photo1": "https://picsum.photos/id/237/200/300",
+            "photo2": "https://picsum.photos/id/238/200/300",
+            "photo3": "https://picsum.photos/id/239/200/300"
+        },
+        {
+            "photo1": "https://picsum.photos/id/237/200/300",
+            "photo2": "https://picsum.photos/id/238/200/300",
+            "photo3": "https://picsum.photos/id/239/200/300"
+        },
+        {
+            "photo1": "https://picsum.photos/id/237/200/300",
+            "photo2": "https://picsum.photos/id/238/200/300",
+            "photo3": "https://picsum.photos/id/239/200/300"
+        },
+        {
+            "photo1": "https://picsum.photos/id/237/200/300",
+            "photo2": "https://picsum.photos/id/238/200/300",
+            "photo3": "https://picsum.photos/id/239/200/300"
+        }
 ]
 }

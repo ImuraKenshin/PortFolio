@@ -11,7 +11,7 @@ fetch("./contenu.json")
     return data.json()
 })
 .then(donnees=>{
-    contenu(donnees.projets)
+    contenu(donnees.projets,donnees.profil)
     var swiper = new Swiper(".mySwiper", {
         grabCursor: true,
         effect: "creative",
@@ -34,7 +34,6 @@ fetch("./contenu.json")
     });
     clicImg()
 })
-
 
 /*
 ************************************************************************************************
@@ -71,7 +70,10 @@ fetch("./contenu.json")
     </div>
 </div>
 */
-
+/*
+<img class="pictoCompet" src="./image/picto/icons8-html5-64.png" title="HTML5"><img class="pictoCompet" src="./image/picto/icons8-css3-100.png" title="CSS3"><img class="pictoCompet" src="./image/picto/icons8-js-64.png" title="JavaScript Vanilla"><img class="pictoCompet" src="./image/picto/icons8-document-64.png" title="SASS"><br>
+<img class="pictoCompet" src="./image/picto/icons8-visual-studio-48.png" title="VS Code"><img class="pictoCompet" src="./image/picto/icons8-github-64.png" title="GitHub"><img class="pictoCompet" src="./image/picto/icons8-notion-64.png" title="Notion"><img class="pictoCompet" src="./image/picto/icons8-filezilla-48.png" title="FileZilla"><img class="pictoCompet" src="./image/picto/icons8-figma-48.png" title="Figma">
+*/
 //j'appel mon slider
 let slider = document.getElementById("slider")
 
@@ -79,10 +81,31 @@ let slider = document.getElementById("slider")
  * la fonction ajoute le contenu à mon slider
  * @param {Array} X
  */
-function contenu(X){
-    slider.innerHTML = `<div class="swiper-slide slide1">
-            <div class="swiper-content flex space-between"></div>
-        </div>`
+function contenu(X,Y){
+    Y.forEach(donnee=>{
+        slider.innerHTML = `<div class="swiper-slide flex align-center slide1">
+                <div class="swiper-content flex space-between">
+                    <div class="profil flex justify-center gap">
+                        <div><img class="imgProfil" src="https://picsum.photos/id/240/200/300" alt=""></div>
+                        <div class="coordonnees">
+                            <div class="flex civilite">
+                                <p>${donnee.nom}</p>
+                                <p>${donnee.prenom}</p>
+                            </div>
+                            <address>
+                                <div><a class="flex align-center gap" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>${donnee.telephone}</a></div>
+                                <div><a class="flex align-center gap" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>${donnee.mail}</a></div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="description flex align-center gap">
+                        <p>${donnee.description}</p>
+                        <p>${donnee.services}</p>
+                        <p>${donnee.competences}</p>
+                    </div>
+                </div>
+            </div>`
+    })
     // pour chaque objet du json
     for (let i = 0; i < X.length; i++) {
         let donnee = X[i]

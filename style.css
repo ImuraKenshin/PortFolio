@@ -19,6 +19,19 @@ body{
 .space-between{
     justify-content: space-between;
 }
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.gap{
+    gap:32px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
 
 
 /*
@@ -54,8 +67,75 @@ body{
 }
 
 /*
+***************************************************************************************************
+*********************************************PRESENTATION******************************************
+***************************************************************************************************
+*/
+
+/*
+***********************************************Photo***********************************************
+*/
+.profil{
+    width: 45%;
+}
+.imgProfil{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.coordonnees{
+    width: 400px;
+}
+.civilite{
+    margin-bottom: 32px;
+}
+.civilite>p{
+    width: 50%;
+    color: white;
+    font-size: 16px;
+}
+.profil a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+address>div{
+    margin-bottom: 16px;
+}
+.picto{
+    width: 32px;
+    height: 32px;
+}
+
+/*
+*********************************************Description*******************************************
+*/
+.description{
+    width: 45%;
+}
+.description p{
+    color: white;
+    font-size: 16px;
+}
+.pictoCompet{
+    width: 64px;
+    height: 64px;
+}
+
+/*
+***************************************************************************************************
+************************************************PROJETS********************************************
+***************************************************************************************************
+*/
+
+
+/*
 *******************************************Photo projet********************************************
 */
+
+
 .divPhoto{
     width: 45%;
     height: 80vh;
