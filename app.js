@@ -24,6 +24,13 @@ fetch("./contenu.json")
             translate: ["100%", 0, 0],
             },
         },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
     clicImg()
 })
@@ -57,9 +64,9 @@ fetch("./contenu.json")
             <img src="https://picsum.photos/id/240/200/300" alt="">
         </div>
         <div class="divPhoto divPhotoDroite">
-            <img id="photo1" class="photosDroites initDroite" src="${donnee.photo1}" alt="">
-            <img id="photo2" class="photosDroites initDroite" src="${donnee.photo2}" alt="">
-            <img id="photo3" class="photosDroites initDroite" src="${donnee.photo3}" alt="">
+            <img id="photo4" class="photosDroites initDroite" src="${donnee.photo1}" alt="">
+            <img id="photo5" class="photosDroites initDroite" src="${donnee.photo2}" alt="">
+            <img id="photo6" class="photosDroites initDroite" src="${donnee.photo3}" alt="">
         </div>
     </div>
 </div>
@@ -85,9 +92,9 @@ function contenu(X){
             slider.innerHTML += `<div class="swiper-slide slide2">
                 <div class="swiper-content flex space-between">
                     <div class="divPhoto divPhotoGauche">
-                        <img id="photo1" class="photosGauches initGauche" src="${donnee.photo1}" alt="">
-                        <img id="photo2" class="photosGauches initGauche" src="${donnee.photo2}" alt="">
-                        <img id="photo3" class="photosGauches initGauche" src="${donnee.photo3}" alt="">
+                        <img id="photo1" class="photosGauches initGauche init" src="${donnee.photo1}" alt="">
+                        <img id="photo2" class="photosGauches initGauche init" src="${donnee.photo2}" alt="">
+                        <img id="photo3" class="photosGauches initGauche init" src="${donnee.photo3}" alt="">
                     </div>
                     <div class="textContent">
                         <img src="https://picsum.photos/id/240/200/300" alt="">
@@ -102,9 +109,9 @@ function contenu(X){
                         <img src="https://picsum.photos/id/240/200/300" alt="">
                     </div>
                     <div class="divPhoto divPhotoDroite">
-                        <img id="photo4" class="photosDroites initDroite" src="${donnee.photo1}" alt="">
-                        <img id="photo5" class="photosDroites initDroite" src="${donnee.photo2}" alt="">
-                        <img id="photo6" class="photosDroites initDroite" src="${donnee.photo3}" alt="">
+                        <img id="photo4" class="photosDroites initDroite init" src="${donnee.photo1}" alt="">
+                        <img id="photo5" class="photosDroites initDroite init" src="${donnee.photo2}" alt="">
+                        <img id="photo6" class="photosDroites initDroite init" src="${donnee.photo3}" alt="">
                     </div>
                 </div>
             </div>` 
@@ -119,14 +126,19 @@ function contenu(X){
 ************************************************************************************************
 */
 
-//fonction
 
+/**
+ * La fonction active un translate sur les images au clic
+ */
 function clicImg(){
+
+    /*
+    ******************************PHOTOS GAUCHES**********************************
+    */
     let photosGauches = document.querySelectorAll(".photosGauches")
     
     photosGauches.forEach(photo => {
         photo.addEventListener("click", () => {
-            console.log("clic")
             translateGauche(photo)
         })
     })
@@ -141,6 +153,9 @@ function clicImg(){
         }
     }
     
+    /*
+    ******************************PHOTOS DROITES**********************************
+    */
     let photosDroites = document.querySelectorAll(".photosDroites")
     
     photosDroites.forEach(photo => {
