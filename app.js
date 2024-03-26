@@ -84,7 +84,7 @@ let slider = document.getElementById("slider")
 */
 function contenu(X,Y){
     Y.forEach(donnee=>{
-        slider.innerHTML = `<div class="swiper-slide flex align-center slide1">
+        slider.innerHTML = `<div class="swiper-slide flex align-center">
                 <div class="swiper-content flex space-between">
                     <div class="profil flex justify-center gap">
                         <div><img class="imgProfil" src="https://picsum.photos/id/240/200/300" alt=""></div>
@@ -94,8 +94,8 @@ function contenu(X,Y){
                                 <h4>${donnee.prenom}</h4>
                             </div>
                             <address>
-                                <div><a class="flex align-center gap" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>${donnee.telephone}</a></div>
-                                <div><a class="flex align-center gap" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>${donnee.mail}</a></div>
+                                <div><a class="flex align-center gap" href="tel:${donnee.telephone}"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>${donnee.telephone}</a></div>
+                                <div><a class="flex align-center gap" href="mailto:${donnee.mail}"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>${donnee.mail}</a></div>
                             </address>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ function contenu(X,Y){
         // si la position dans le tableau est paire
         if(i%2 == 0){
             // je rajoute un slide gauche à slider
-            slider.innerHTML += `<div class="swiper-slide slide2">
+            slider.innerHTML += `<div class="swiper-slide">
                 <div class="swiper-content flex space-between">
                     <div class="divPhoto divPhotoGauche">
                         <img id="photo1" class="photosGauches initGauche init" src="${donnee.photo1}" alt="">
@@ -137,7 +137,7 @@ function contenu(X,Y){
             </div>`
         }else{
             // sinon je rajoute un slide droite à slider
-            slider.innerHTML += `<div class="swiper-slide slide3 flex">
+            slider.innerHTML += `<div class="swiper-slide">
                 <div class="swiper-content flex space-between">
                     <div class="textContent flex">
                         <h2>${donnee.titre}</h2>
