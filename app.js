@@ -80,7 +80,7 @@ let slider = document.getElementById("slider")
 /**
  * la fonction ajoute le contenu à mon slider
  * @param {Array} X
- */
+*/
 function contenu(X,Y){
     Y.forEach(donnee=>{
         slider.innerHTML = `<div class="swiper-slide flex align-center slide1">
@@ -89,8 +89,8 @@ function contenu(X,Y){
                         <div><img class="imgProfil" src="https://picsum.photos/id/240/200/300" alt=""></div>
                         <div class="coordonnees">
                             <div class="flex civilite">
-                                <p>${donnee.nom}</p>
-                                <p>${donnee.prenom}</p>
+                                <h4>${donnee.nom}</h4>
+                                <h4>${donnee.prenom}</h4>
                             </div>
                             <address>
                                 <div><a class="flex align-center gap" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>${donnee.telephone}</a></div>
@@ -99,6 +99,8 @@ function contenu(X,Y){
                         </div>
                     </div>
                     <div class="description flex align-center gap">
+                        <h1>${donnee.titre}</h1>
+                        <h3>${donnee.sousTitre}</h3>
                         <p>${donnee.description}</p>
                         <p>${donnee.services}</p>
                         <p><img class="pictoCompet" src="./image/picto/icons8-html5-64.png" title="HTML5"><img class="pictoCompet" src="./image/picto/icons8-css3-100.png" title="CSS3"><img class="pictoCompet" src="./image/picto/icons8-js-64.png" title="JavaScript Vanilla"><img class="pictoCompet" src="./image/picto/icons8-document-64.png" title="SASS"><br>
@@ -129,8 +131,14 @@ function contenu(X,Y){
             // sinon je rajoute un slide droite à slider
             slider.innerHTML += `<div class="swiper-slide slide3 flex">
                 <div class="swiper-content flex space-between">
-                    <div class="textContent">
-                        <img src="https://picsum.photos/id/240/200/300" alt="">
+                    <div class="textContent flex">
+                        <h2>${donnee.titre}</h2>
+                        <h3>${donnee.sousTitre}</h3>
+                        <div class="flex gap">
+                            <p>${donnee.para1}</p>
+                            <p>${donnee.para2}</p>
+                            <p>${donnee.para3}</p>
+                        </div>
                     </div>
                     <div class="divPhoto divPhotoDroite">
                         <img id="photo4" class="photosDroites initDroite init" src="${donnee.photo1}" alt="">
@@ -198,4 +206,3 @@ function clicImg(){
         }
     }
 }
-

@@ -6,9 +6,10 @@
             "prenom":"Florent",
             "telephone":"06 61 30 04 14",
             "mail": "imura.kenshin@live.fr",
+            "titre":"Développeur web",
+            "sousTitre":"FrontEND, BackEND",
             "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?",
-            "services":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?"
-            
+            "services":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?"   
         }
     ],
     "projets":[
@@ -18,9 +19,14 @@
             "photo3": "https://picsum.photos/id/239/200/300"
         },
         {
-            "photo1": "https://picsum.photos/id/237/200/300",
-            "photo2": "https://picsum.photos/id/238/200/300",
-            "photo3": "https://picsum.photos/id/239/200/300"
+            "titre":"Exercice application météo",
+            "sousTitre":"Projet individuel en cours de formation",
+            "para1":"Cette application météo sur navigateur utilise une API et la géolocalisation pour fournir des prévisions. Réalisée en suivant une maquette sur Figma, elle offre une expérience utilisateur fluide.",
+            "para2":"L'intégration de ces éléments a été un défi technique surmonté avec succès. La disposition en grid a permit de rester fidèle à la maquette et d'obtenir un rendu agréable visuellement.",
+            "para3":"Cet exercice a démontré mes compétences en intégration et gestion d'objet javascript.",
+            "photo1": "./image/projets/appli-meteo/appli-meteo-maquette.png",
+            "photo2": "./image/projets/appli-meteo/appli-meteo-html.png",
+            "photo3": "./image/projets/appli-meteo/appli-meteo-rendu.png"
         },
         {
             "photo1": "https://picsum.photos/id/237/200/300",
