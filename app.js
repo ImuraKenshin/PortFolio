@@ -15,6 +15,7 @@ fetch("./contenu.json")
     var swiper = new Swiper(".mySwiper", {
         grabCursor: true,
         effect: "creative",
+        loop: true,
         creativeEffect: {
             prev: {
             shadow: true,
@@ -104,7 +105,7 @@ function contenu(X,Y){
                         <p>${donnee.description}</p>
                         <p>${donnee.services}</p>
                         <p><img class="pictoCompet" src="./image/picto/icons8-html5-64.png" title="HTML5"><img class="pictoCompet" src="./image/picto/icons8-css3-100.png" title="CSS3"><img class="pictoCompet" src="./image/picto/icons8-js-64.png" title="JavaScript Vanilla"><img class="pictoCompet" src="./image/picto/icons8-document-64.png" title="SASS"><br>
-                        <img class="pictoCompet" src="./image/picto/icons8-visual-studio-48.png" title="VS Code"><img class="pictoCompet" src="./image/picto/icons8-github-64.png" title="GitHub"><img class="pictoCompet" src="./image/picto/icons8-notion-64.png" title="Notion"><img class="pictoCompet" src="./image/picto/icons8-filezilla-48.png" title="FileZilla"><img class="pictoCompet" src="./image/picto/icons8-figma-48.png" title="Figma"></p>
+                        <img class="pictoCompet" src="./image/picto/icons8-visual-studio-48.png" title="VS Code"><img class="pictoCompet" src="./image/picto/icons8-github-64.png" title="GitHub"><img class="pictoCompet" src="./image/picto/icons8-notion-80.png" title="Notion"><img class="pictoCompet" src="./image/picto/icons8-filezilla-48.png" title="FileZilla"><img class="pictoCompet" src="./image/picto/icons8-figma-48.png" title="Figma"></p>
                     </div>
                 </div>
             </div>`
@@ -122,8 +123,15 @@ function contenu(X,Y){
                         <img id="photo2" class="photosGauches initGauche init" src="${donnee.photo2}" alt="">
                         <img id="photo3" class="photosGauches initGauche init" src="${donnee.photo3}" alt="">
                     </div>
-                    <div class="textContent">
-                        <img src="https://picsum.photos/id/240/200/300" alt="">
+                    <div class="textContent flex">
+                        <h2>${donnee.titre}</h2>
+                        <h3>${donnee.sousTitre}</h3>
+                        <div class="flex gap">
+                            <p>${donnee.para1}</p>
+                            <p>${donnee.para2}</p>
+                            <p>${donnee.para3}</p>
+                        </div>
+                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir sur Github</button></a></div>
                     </div>
                 </div>
             </div>`
@@ -139,6 +147,7 @@ function contenu(X,Y){
                             <p>${donnee.para2}</p>
                             <p>${donnee.para3}</p>
                         </div>
+                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir sur Github</button></a></div>
                     </div>
                     <div class="divPhoto divPhotoDroite">
                         <img id="photo4" class="photosDroites initDroite init" src="${donnee.photo1}" alt="">

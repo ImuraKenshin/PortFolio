@@ -14,9 +14,15 @@
     ],
     "projets":[
         {
+            "titre":"Site absurde",
+            "sousTitre":"Projet individuel en cours de formation",
+            "para1":"",
+            "para2":"",
+            "para3":"",
             "photo1": "https://picsum.photos/id/237/200/300",
             "photo2": "https://picsum.photos/id/238/200/300",
-            "photo3": "https://picsum.photos/id/239/200/300"
+            "photo3": "https://picsum.photos/id/239/200/300",
+            "github":""
         },
         {
             "titre":"Exercice application météo",
@@ -26,22 +32,19 @@
             "para3":"Cet exercice a démontré mes compétences en intégration et gestion d'objet javascript.",
             "photo1": "./image/projets/appli-meteo/appli-meteo-maquette.png",
             "photo2": "./image/projets/appli-meteo/appli-meteo-html.png",
-            "photo3": "./image/projets/appli-meteo/appli-meteo-rendu.png"
+            "photo3": "./image/projets/appli-meteo/appli-meteo-rendu.png",
+            "github":"https://imurakenshin.github.io/appli-meteo/"
         },
         {
+            "titre":"Modèle de site e-commerce",
+            "sousTitre":"Evaluation finale de module FrontEND",
+            "para1":"",
+            "para2":"",
+            "para3":"",
             "photo1": "https://picsum.photos/id/237/200/300",
             "photo2": "https://picsum.photos/id/238/200/300",
-            "photo3": "https://picsum.photos/id/239/200/300"
-        },
-        {
-            "photo1": "https://picsum.photos/id/237/200/300",
-            "photo2": "https://picsum.photos/id/238/200/300",
-            "photo3": "https://picsum.photos/id/239/200/300"
-        },
-        {
-            "photo1": "https://picsum.photos/id/237/200/300",
-            "photo2": "https://picsum.photos/id/238/200/300",
-            "photo3": "https://picsum.photos/id/239/200/300"
+            "photo3": "https://picsum.photos/id/239/200/300",
+            "github":"https://imurakenshin.github.io/eval-5/"
         }
-]
+    ]
 }
