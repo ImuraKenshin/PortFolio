@@ -19,9 +19,9 @@
             "para1":"Ce projet avait pour but de découvrir les utilisations possibles des IA dans la conception d'un contenu. L'objectif était de partager ses idées avec diverses IA pour voir les propositions qu'elles pouvaient faire.",
             "para2":"Cette exercice m'a permit de découvrir la génération d'image ainsi que la création de contenu textuel. J'ai également eu un premier apperçu de la réflexion sur l'expérience utilisateur.",
             "para3":"Il fait partie d'un groupe de projets réalisés par la session WEBECOM 2024. Ils sont tous visionnables en suivant le lien en bas de la page github",
-            "photo1": "https://picsum.photos/id/237/200/300",
-            "photo2": "https://picsum.photos/id/238/200/300",
-            "photo3": "https://picsum.photos/id/239/200/300",
+            "photo1": "./image/projets/site absurde/site-absurde-html.png",
+            "photo2": "./image/projets/site absurde/site-absurde-rendu2.png",
+            "photo3": "./image/projets/site absurde/site-absurde-rendu1.png",
             "github":"https://imurakenshin.github.io/Site-absurde/"
         },
         {
