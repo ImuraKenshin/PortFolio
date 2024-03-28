@@ -7,7 +7,7 @@
             "telephone":"06 61 30 04 14",
             "mail": "imura.kenshin@live.fr",
             "titre":"Développeur web",
-            "sousTitre":"FrontEND, BackEND",
+            "sousTitre":"Full-Stack",
             "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?",
             "services":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?"   
         }
@@ -16,9 +16,9 @@
         {
             "titre":"Site absurde",
             "sousTitre":"Projet individuel en cours de formation",
-            "para1":"",
-            "para2":"",
-            "para3":"",
+            "para1":"Ce projet avait pour but de découvrir les utilisations possibles des IA dans la conception d'un contenu. L'objectif était de partager ses idées avec diverses IA pour voir les propositions qu'elles pouvaient faire.",
+            "para2":"Cette exercice m'a permit de découvrir la génération d'image ainsi que la création de contenu textuel. J'ai également eu un premier apperçu de la réflexion sur l'expérience utilisateur.",
+            "para3":"Il fait partie d'un groupe de projets réalisés par la session WEBECOM 2024. Ils sont tous visionnables en suivant le lien en bas de la page github",
             "photo1": "https://picsum.photos/id/237/200/300",
             "photo2": "https://picsum.photos/id/238/200/300",
             "photo3": "https://picsum.photos/id/239/200/300",
