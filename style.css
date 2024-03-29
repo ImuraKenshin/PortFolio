@@ -228,6 +228,9 @@ box-shadow: inset 0 0 5px hsl(var(--hue) 20% 15% / 100%),
 .gap{
     gap:32px;
 }
+.gap16{
+    gap: 16px;
+}
 img{
     width: 100%;
     height: auto;
@@ -301,7 +304,7 @@ img{
 .civilite{
     width: 90%;
     gap: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
 }
 .civilite>h4{
     width: 30%;
@@ -329,6 +332,9 @@ h1{
     color: white;
     width: 100%;
 }
+.description>h3{
+    margin-bottom: 8px;
+}
 .description{
     width: 45%;
 }
@@ -351,7 +357,7 @@ legend{
 li{
     color: white;
     font-size: 16px;
-    margin-top: 16px;
+    margin-top: 8px;
     width: 30%;
     margin-left: 20px;
 }

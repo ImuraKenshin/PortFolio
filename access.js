@@ -43,3 +43,18 @@ access2.addEventListener("click",()=>{
     luciole()
     monStockage.setItem("luciole",access2.checked)
 })
+
+let swiper = document.getElementById("slider")
+
+swiper.addEventListener("click", ()=>{
+    let burger = document.getElementById("burger")
+    let lateral = document.getElementById("headerBurger")
+    // j'ajoute la classe init
+    burger.classList.add("init")
+    // j'annule le déplacement du menu latéral
+    lateral.style.transform = "translateX(200px)"
+    // je remet l'icône du burger
+    span1.classList.remove("burgerCroix1")
+    span2.classList.remove("burgerCroix2")
+    span3.classList.remove("burgerCroix3")
+})

@@ -99,7 +99,7 @@ function contenu(X,Y){
                             </address>
                         </div>
                     </div>
-                    <div class="description flex align-center gap">
+                    <div class="description flex align-center gap16">
                         <h1>${donnee.titre}</h1>
                         <h3>${donnee.sousTitre}</h3>
                         <p>${donnee.description}</p>
