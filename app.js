@@ -103,7 +103,21 @@ function contenu(X,Y){
                         <h1>${donnee.titre}</h1>
                         <h3>${donnee.sousTitre}</h3>
                         <p>${donnee.description}</p>
-                        <p>${donnee.services}</p>
+                        <p>
+                            <ul class="flex">
+                                <legend>Sites :</legend>
+                                <li>Portfolio</li>
+                                <li>Vitrine</li>
+                                <li>E-commerce</li>
+                                <li>Application web</li>
+                            </ul>
+                            <ul class="flex">
+                                <legend>Accompagnements :</legend>
+                                <li>Audite SEO</li>
+                                <li>Accessibilité (mise aux normes)</li>
+                                <li>Formation / mentorat</li>
+                            </ul>
+                        </p>
                         <p><img class="pictoCompet" src="./image/picto/icons8-html5-64.png" title="HTML5"><img class="pictoCompet" src="./image/picto/icons8-css3-100.png" title="CSS3"><img class="pictoCompet" src="./image/picto/icons8-js-64.png" title="JavaScript Vanilla"><img class="pictoCompet" src="./image/picto/icons8-document-64.png" title="SASS"><br>
                         <img class="pictoCompet" src="./image/picto/icons8-visual-studio-48.png" title="VS Code"><img class="pictoCompet" src="./image/picto/icons8-github-64.png" title="GitHub"><img class="pictoCompet" src="./image/picto/icons8-notion-80.png" title="Notion"><img class="pictoCompet" src="./image/picto/icons8-filezilla-48.png" title="FileZilla"><img class="pictoCompet" src="./image/picto/icons8-figma-48.png" title="Figma"></p>
                     </div>
@@ -131,7 +145,7 @@ function contenu(X,Y){
                             <p>${donnee.para2}</p>
                             <p>${donnee.para3}</p>
                         </div>
-                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir le rendu sur Github Pages</button></a></div>
+                        <div class="bouton"><a class="button" href="${donnee.github}" target="_blank" title="lien vers la page github du projet">Voir le rendu sur Github Pages</a></div>
                     </div>
                 </div>
             </div>`
@@ -147,7 +161,7 @@ function contenu(X,Y){
                             <p>${donnee.para2}</p>
                             <p>${donnee.para3}</p>
                         </div>
-                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir le rendu sur Github Pages</button></a></div>
+                        <div class="bouton"><a class="button" href="${donnee.github}" target="_blank" title="lien vers la page github du projet">Voir le rendu sur Github Pages</a></div>
                     </div>
                     <div class="divPhoto divPhotoDroite">
                         <img id="photo4" class="photosDroites initDroite init" src="${donnee.photo1}" alt="">
