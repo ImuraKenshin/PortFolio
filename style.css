@@ -535,17 +535,17 @@ h3{
     #photo1{
         z-index: 0;
         left: 0%;
-        top: 10vh;
+        top: 5vh;
     }
     #photo2{
         z-index: 1;
         left: 5%;
-        top: 20vh;
+        top: 10vh;
     }
     #photo3{
         z-index: 2;
         left: 10%;
-        top: 30vh;
+        top: 15vh;
     }
     .divPhotoDroite img{
         width: 80vw;
@@ -556,17 +556,17 @@ h3{
     #photo4{
         z-index: 0;
         right: -8%;
-        top: 10vh;
+        top: 5vh;
     }
     #photo5{
         z-index: 1;
         right: -3%;
-        top: 20vh;
+        top: 10vh;
     }
     #photo6{
         z-index: 2;
         right: 2%;
-        top: 30vh;
+        top: 15vh;
     }
     .initGauche{
         transform: rotateY(0deg) rotateX(0deg);
