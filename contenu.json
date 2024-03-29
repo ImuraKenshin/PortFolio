@@ -9,7 +9,7 @@
             "titre":"Développeur web",
             "sousTitre":"Full-Stack",
             "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?",
-            "services":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?"   
+            "services":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae corporis a sed error ipsa, enim vel veritatis ipsum alias dolorem quibusdam recusandae asperiores! Laboriosam illo assumenda modi nihil non?"
         }
     ],
     "projets":[
@@ -38,9 +38,9 @@
         {
             "titre":"Modèle de site e-commerce",
             "sousTitre":"Evaluation finale de module FrontEND",
-            "para1":"",
-            "para2":"",
-            "para3":"",
+            "para1":"Pour mon évaluation finale frontend, j'ai conçu un site web pour M'S (Men Sportswear), une boutique spécialisée dans les vêtements et équipements sportifs pour hommes. En accord avec le design système de la marque, j'ai développé une page d'accueil, un modèle de page pour la catégorie 'chaussures - baskets', ainsi qu'un modèle de page détail produit.",
+            "para2":"Respectant les délais, j'ai également mis en place un système de validation des données pour le formulaire de contact, garantissant une interaction utilisateur efficace.",
+            "para3":"Le site est adaptable à tous les appareils. De plus, j'ai intégré des animations discrètes pour dynamiser l'interface. Mon travail reflète ma capacité à répondre aux besoins du client tout en maintenant des standards élevés de conception et de fonctionnalité.",
             "photo1": "./image/projets/eval-5/M'S-maquette.png",
             "photo2": "./image/projets/eval-5/M'S-html.png",
             "photo3": "./image/projets/eval-5/M'S-rendu.png",

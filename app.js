@@ -131,7 +131,7 @@ function contenu(X,Y){
                             <p>${donnee.para2}</p>
                             <p>${donnee.para3}</p>
                         </div>
-                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir sur Github</button></a></div>
+                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir le rendu sur Github Pages</button></a></div>
                     </div>
                 </div>
             </div>`
@@ -147,7 +147,7 @@ function contenu(X,Y){
                             <p>${donnee.para2}</p>
                             <p>${donnee.para3}</p>
                         </div>
-                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir sur Github</button></a></div>
+                        <div><a href="${donnee.github}" target="_blank" title="lien vers la page github du projet"><button type="button">Voir le rendu sur Github Pages</button></a></div>
                     </div>
                     <div class="divPhoto divPhotoDroite">
                         <img id="photo4" class="photosDroites initDroite init" src="${donnee.photo1}" alt="">
