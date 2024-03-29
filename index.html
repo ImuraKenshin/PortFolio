@@ -13,7 +13,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="swiper mySwiper">
+<body class="swiper mySwiper init">
+    <header>
+        <div id="burger" class="init flex align-center justify-center">
+            <button id="burgerIcon" class="burger_icon flex">
+                <span id="1"></span>
+                <span id="2"></span>
+                <span id="3"></span>
+            </button>
+        </div>
+        <div id="headerBurger">     
+            <div class="access">
+                <p>Luciole</p>
+                <label for="accessibilite2" class="change">
+                    <input name="accessibilite2" id="accessibilite2" class="togglesw" type="checkbox">
+                    <div class="indicator left"></div>
+                    <div class="indicator right"></div>
+                    <div class="button"></div>
+                </label>
+            </div>
+        </div>
+    </header>
     <div id="slider" class="swiper-wrapper swiper-principal">
     </div>
     <div class="swiper-button-next"></div>
@@ -22,6 +42,8 @@
 
     
     <script src="./node_modules/swiper/swiper-bundle.js"></script>
+    <script src="./access.js" defer></script>
+    <script src="./header.js" defer></script>
     <script src="./app.js" defer></script>
 </body>
 
