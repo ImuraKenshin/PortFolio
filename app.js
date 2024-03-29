@@ -42,39 +42,6 @@ fetch("./contenu.json")
 ************************************************************************************************
 */
 
-/*
-<div class="swiper-slide slide2">
-    <div class="swiper-content flex space-between">
-        <div class="divPhoto divPhotoGauche">
-            <img id="photo1" class="photosGauches initGauche" src="${donnee.photo1}" alt="">
-            <img id="photo2" class="photosGauches initGauche" src="${donnee.photo2}" alt="">
-            <img id="photo3" class="photosGauches initGauche" src="${donnee.photo3}" alt="">
-        </div>
-        <div class="textContent">
-            <img src="https://picsum.photos/id/240/200/300" alt="">
-        </div>
-    </div>
-</div>
-
-
-
-<div class="swiper-slide slide3 flex">
-    <div class="swiper-content flex space-between">
-        <div class="textContent">
-            <img src="https://picsum.photos/id/240/200/300" alt="">
-        </div>
-        <div class="divPhoto divPhotoDroite">
-            <img id="photo4" class="photosDroites initDroite" src="${donnee.photo1}" alt="">
-            <img id="photo5" class="photosDroites initDroite" src="${donnee.photo2}" alt="">
-            <img id="photo6" class="photosDroites initDroite" src="${donnee.photo3}" alt="">
-        </div>
-    </div>
-</div>
-*/
-/*
-<img class="pictoCompet" src="./image/picto/icons8-html5-64.png" title="HTML5"><img class="pictoCompet" src="./image/picto/icons8-css3-100.png" title="CSS3"><img class="pictoCompet" src="./image/picto/icons8-js-64.png" title="JavaScript Vanilla"><img class="pictoCompet" src="./image/picto/icons8-document-64.png" title="SASS"><br>
-<img class="pictoCompet" src="./image/picto/icons8-visual-studio-48.png" title="VS Code"><img class="pictoCompet" src="./image/picto/icons8-github-64.png" title="GitHub"><img class="pictoCompet" src="./image/picto/icons8-notion-64.png" title="Notion"><img class="pictoCompet" src="./image/picto/icons8-filezilla-48.png" title="FileZilla"><img class="pictoCompet" src="./image/picto/icons8-figma-48.png" title="Figma">
-*/
 //j'appel mon slider
 let slider = document.getElementById("slider")
 
@@ -84,12 +51,12 @@ let slider = document.getElementById("slider")
 */
 function contenu(X,Y){
     Y.forEach(donnee=>{
-        slider.innerHTML = `<div class="swiper-slide flex align-center">
+        slider.innerHTML = `<div class="swiper-slide flex-column flex align-center">
                 <div class="swiper-content flex space-between">
-                    <div class="profil flex justify-center gap">
-                        <div><img class="imgProfil" src="${donnee.photo}" alt="photo de profil"></div>
-                        <div class="coordonnees justify-center flex">
-                            <div class="flex justify-center civilite">
+                    <div class="profil width100 flex justify-center gap">
+                        <div class="photoProf width100"><img class="imgProfil" src="${donnee.photo}" alt="photo de profil"></div>
+                        <div class="coordonnees width100 justify-center flex">
+                            <div class="flex width100 justify-center civilite">
                                 <h4>${donnee.nom}</h4>
                                 <h4>${donnee.prenom}</h4>
                             </div>
@@ -99,7 +66,7 @@ function contenu(X,Y){
                             </address>
                         </div>
                     </div>
-                    <div class="description flex align-center gap16">
+                    <div class="description width100 flex align-center gap16">
                         <h1>${donnee.titre}</h1>
                         <h3>${donnee.sousTitre}</h3>
                         <p>${donnee.description}</p>
@@ -131,13 +98,13 @@ function contenu(X,Y){
         if(i%2 == 0){
             // je rajoute un slide gauche à slider
             slider.innerHTML += `<div class="swiper-slide">
-                <div class="swiper-content flex space-between">
-                    <div class="divPhoto divPhotoGauche">
+                <div class="swiper-content flex-column flex space-between">
+                    <div class="divPhoto width100 divPhotoGauche">
                         <img id="photo1" class="photosGauches initGauche init" src="${donnee.photo1}" alt="">
                         <img id="photo2" class="photosGauches initGauche init" src="${donnee.photo2}" alt="">
                         <img id="photo3" class="photosGauches initGauche init" src="${donnee.photo3}" alt="">
                     </div>
-                    <div class="textContent flex">
+                    <div class="textContent width100 flex">
                         <h2>${donnee.titre}</h2>
                         <h3>${donnee.sousTitre}</h3>
                         <div class="flex gap">
@@ -152,8 +119,8 @@ function contenu(X,Y){
         }else{
             // sinon je rajoute un slide droite à slider
             slider.innerHTML += `<div class="swiper-slide">
-                <div class="swiper-content flex space-between">
-                    <div class="textContent flex">
+                <div class="swiper-content flex-column-reverse flex space-between">
+                    <div class="textContent width100 flex">
                         <h2>${donnee.titre}</h2>
                         <h3>${donnee.sousTitre}</h3>
                         <div class="flex gap">
@@ -163,7 +130,7 @@ function contenu(X,Y){
                         </div>
                         <div class="bouton"><a class="buttonGit" href="${donnee.github}" target="_blank" title="lien vers la page github du projet">Voir le rendu sur Github Pages</a></div>
                     </div>
-                    <div class="divPhoto divPhotoDroite">
+                    <div class="divPhoto width100 divPhotoDroite">
                         <img id="photo4" class="photosDroites initDroite init" src="${donnee.photo1}" alt="">
                         <img id="photo5" class="photosDroites initDroite init" src="${donnee.photo2}" alt="">
                         <img id="photo6" class="photosDroites initDroite init" src="${donnee.photo3}" alt="">
@@ -200,6 +167,7 @@ function clicImg(){
     
     function translateGauche(x) {
         if (x.classList.contains("init")) {
+            removeImg()
             x.classList.remove("init")
             x.classList.add("translateGauche")
         }else{
@@ -221,11 +189,29 @@ function clicImg(){
     
     function translateDroite(x) {
         if (x.classList.contains("init")) {
+            removeImg()
             x.classList.remove("init")
             x.classList.add("translateDroite")
         }else{
             x.classList.add("init")
             x.classList.remove("translateDroite")
         }
+    }
+    /*
+    ******************************IMAGE RETOUR ARRIERE**********************************
+    */
+    function removeImg(){
+        photosDroites.forEach(photo =>{
+            if(photo.classList.contains("init") === false){
+                photo.classList.add("init")
+                photo.classList.remove("translateDroite")
+            }
+        })
+        photosGauches.forEach(photo =>{
+            if(photo.classList.contains("init") === false){
+                photo.classList.add("init")
+                photo.classList.remove("translateGauche")
+            }
+        })
     }
 }

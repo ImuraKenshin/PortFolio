@@ -13,7 +13,6 @@
 }
 body{
     background-color: black;
-    padding: 5%;
     height: 100vh;
     font-family: var(--font), sans-serif;
 }
@@ -29,16 +28,18 @@ header{
     width: 50px;
     height: 50px;
     position: fixed;
-    top: 0;
+    top: 10px;
     right: 30px;
 }
 #headerBurger{
     z-index: 1000000;
+    background-color: black;
+    border-radius: 10px;
     display: flex;
-    padding: 32px 32px;
+    padding: 16px;
     width: 200px;
     position: fixed;
-    top: 50px;
+    top: 80px;
     right: 0;
     transform: translateX(200px);
     transition: transform 0.6s linear;
@@ -463,7 +464,6 @@ h3{
 
 .textContent{
     width: 45%;
-    height: 80vh;
     align-content: center ;
 }
 .textContent p{
@@ -476,4 +476,128 @@ h3{
     height: 80vh;
     object-fit: cover;
     object-position: center;
+}
+
+/*
+************************************************************************************************
+************************************************************************************************
+******************************************RESPONSIVE********************************************
+************************************************************************************************
+************************************************************************************************
+*/
+
+@media all and (max-width:1400px){
+    .flex-column{
+        flex-direction: column;
+    }
+    .flex-column-reverse{
+        flex-direction: column-reverse;
+    }
+    .width100{
+        width: 80vw;
+    }
+    body{
+        height: 200vh;
+    }
+    address{
+        margin-bottom: 64px;
+    }
+    .swiper-wrapper{
+        height: 100%;
+    }
+    .photoProf{
+        display: flex;
+        justify-content: center;
+    }
+    .imgProfil{
+        justify-self: center;
+    }
+    .civilite{
+        gap: 50px;
+        margin-bottom: 32px;
+    }
+    .civilite h4{
+        width: fit-content;
+    }
+    /*
+    **************************************photo****************************************
+    */
+    .divPhoto{
+        perspective: 0%;
+    }
+    
+    .divPhotoGauche img{
+        width: 80vw;
+        height: auto;
+        cursor: default;
+        position:absolute;
+    }
+    #photo1{
+        z-index: 0;
+        left: 0%;
+        top: 10vh;
+    }
+    #photo2{
+        z-index: 1;
+        left: 5%;
+        top: 20vh;
+    }
+    #photo3{
+        z-index: 2;
+        left: 10%;
+        top: 30vh;
+    }
+    .divPhotoDroite img{
+        width: 80vw;
+        height: auto;
+        cursor: default;
+        position:absolute;
+    }
+    #photo4{
+        z-index: 0;
+        right: -8%;
+        top: 10vh;
+    }
+    #photo5{
+        z-index: 1;
+        right: -3%;
+        top: 20vh;
+    }
+    #photo6{
+        z-index: 2;
+        right: 2%;
+        top: 30vh;
+    }
+    .initGauche{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    .initDroite{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    .translateGauche{
+        transform: translateY(0px) translateX(0px) rotateY(0deg) rotateX(0deg) scale(1);
+        z-index:4 !important;
+    }
+    .translateDroite{
+        transform: translateY(0px) translateX(0px)  rotateY(0deg) rotateX(0deg) scale(1);
+        z-index:4 !important;
+    }
+    
+    /*
+    **************************************textContent****************************************
+    */
+    .textContent{
+        margin-top: 100px;
+    }
+    .textContent img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media all and (max-width:1150px){
+    .textContent{
+        margin-top: 0;
+    }
 }

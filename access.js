@@ -4,7 +4,6 @@ window.addEventListener("DOMContentLoaded",()=>{})
 let monStockage = localStorage
 window.addEventListener("load",()=>{
     if(monStockage.getItem("luciole") === 'true'){
-        access.checked = true
         access2.checked = true
         luciole()
     }else{
