@@ -87,9 +87,9 @@ function contenu(X,Y){
         slider.innerHTML = `<div class="swiper-slide flex align-center">
                 <div class="swiper-content flex space-between">
                     <div class="profil flex justify-center gap">
-                        <div><img class="imgProfil" src="https://picsum.photos/id/240/200/300" alt=""></div>
-                        <div class="coordonnees">
-                            <div class="flex civilite">
+                        <div><img class="imgProfil" src="${donnee.photo}" alt="photo de profil"></div>
+                        <div class="coordonnees justify-center flex">
+                            <div class="flex justify-center civilite">
                                 <h4>${donnee.nom}</h4>
                                 <h4>${donnee.prenom}</h4>
                             </div>
